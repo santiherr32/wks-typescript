@@ -8,5 +8,10 @@ interface Instructor {
   }
   
   const noTypeVar = {name: "Franco", age: 26};
+  const typedVar: Instructor = {
+    name: 'Santiago',
+    age: 14,
+  }
   
   infoInstructor(noTypeVar); // "Franco - 26 years old"
+  infoInstructor(typedVar); // "Santiago - 14 years old"
